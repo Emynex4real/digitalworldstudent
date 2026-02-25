@@ -1,0 +1,139 @@
+.blog-details-container {
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    width: 97%;
+}
+
+.loading,
+.error {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 50px;
+}
+
+.error {
+    color: red;
+}
+
+.blog-details {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    width: 100%;
+    color: white !important;
+}
+
+.blog-details img {
+    width: 100%;
+    height: auto;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #F7941D;;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+/* .blog-details-title{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #222;
+} */
+
+.blog-author {
+    font-size: 14px;
+    color: #F7941D;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.blog-body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff !important;
+    white-space: pre-wrap;
+}
+
+/* banner Design  */
+
+.banner-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    color: #fff;
+    text-align: left;
+}
+
+  
+  .banner-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #F7941D;
+  }
+  
+    .banner-content h1 .startText {
+        position: relative;
+        color: #fff;
+    }
+
+    @media (max-width: 768px) {
+        .blog-banner-text h1 {
+            font-size: 1.6rem !important;
+        }
+        .blog-details {
+            margin-top: 40px;
+            padding: 10px;
+            margin: 0px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .blog-banner-text h1 {
+            font-size: 1.2rem !important;
+        }
+        .blog-details img {
+            height: auto;
+        }
+
+        .blog-details-container {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .banner {
+            /* height: 36vh; */
+            margin-bottom: 40px;
+        }
+        .blog-details {
+            margin-top: 40px;
+        }
+    }
+    @media (max-width: 320px) {
+        .banner {
+            height: 45vh;
+            margin-bottom: 40px;
+        }
+        .blog-details {
+            margin-top: 40px;
+            padding: 5px;
+            margin: 0px;
+        }
+        .banner-text h1 {
+            font-size: 1.3rem;
+        }
+        
+    }
+  

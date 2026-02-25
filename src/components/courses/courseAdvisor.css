@@ -1,0 +1,427 @@
+.main-container {
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.199);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.closeDiv {
+  display: flex;
+  justify-content: end;
+}
+.close {
+  width: 30px;
+  cursor: pointer;
+  /* margin-bottom: 40px; */
+
+
+
+}
+.forms-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* padding-top: 0; */
+    padding-bottom: 30px;
+    background: #f7f6f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    overflow-y: auto; /* Allow scrolling within the form */
+    z-index: 2;
+  }
+  .forms-container  form {
+    display: grid;
+    gap: 15px;
+  }
+  .forms-container h2 {
+    /* text-align: center; */
+    line-height: 2.3rem;
+    margin-bottom: 25px;
+  }
+ .forms-container p {
+    /* text-align: center; */
+    line-height: 1.6rem;
+    margin-bottom: 25px;
+  }
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the inputs */
+    margin-bottom: 20px; /* Adds spacing between input groups */
+    align-items: center;
+    /* width: 100%; */
+    /* min-width: 100%; */
+
+  }
+  .input-group > div {
+    flex: 1; /* Ensures inputs take equal width */
+  }
+  
+  .first-name, .last-name, .email, .phone-cointainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .form-location {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  .course {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  select {
+    /* width: 100%; */
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+  }
+
+  .close-button IMG {
+    width: 40px;
+    height: 40px;
+  }
+
+  input, select {
+    width: 100%; /* Ensures inputs fill their container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  input:focus, select:focus {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+  }
+
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .phone-group {
+    display: flex;
+    /* gap: px; */
+    width: 100%;
+    justify-content: end;
+  }
+
+  .phone-group .countrycode {
+    width: auto;
+    font-size: 15px;
+    
+  }
+  .phone-group .countrycode select {
+    
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-left: none;
+  }
+  .phone-group .number {
+    width: 100%;
+    border-left: none;
+   
+  }
+  .phone-group .number input {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .phone-cointainer {
+    display: grid;
+    gap: 5px;
+    /* flex-direction: column; */
+  }
+  .forms-container button {
+    width: 150px;
+    padding: 10px;
+    background: var(--Digital-world-orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .forms-container button:hover {
+    background: #e67300;
+    transform: scale(1.1);
+  }
+
+  /* Success message */
+
+  .success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 20px; */
+    /* background-color: #f0f8ff; */
+    /* border-radius: 10px; */
+    /* margin-top: 20px; */
+    width: 100%;
+    /* height: 100vh; */
+    /* gap: 20px; */
+  }
+
+ /* Success Message */
+
+.video-container img {
+    width: 50px;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    /* margin-bottom: 20px; */
+    background-color: white;
+  }
+
+
+  .success-icon {
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .success-icon img {
+    border-radius: 50%;
+  }
+  /* .video-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+    font-family: 'Segoe UI', sans-serif;
+  } */
+  
+  .success-message {
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .success-message img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .success-message h1 {
+    font-size: 30px;
+    color: var(--Digital-world-orange);
+    margin-bottom: 8px;
+  }
+  
+  .success-message .sub-heading {
+    font-size: 24px;
+    color: #555;
+    font-weight: 400;
+  }
+  
+  .success-message .subtext {
+    font-size: 14px;
+    color: #888;
+    /* margin-top: 8px; */
+  }
+  
+  .video-section {
+    margin-top: 32px;
+
+  }
+  
+  .video-section h3 {
+    font-size: 30px;
+    color: var(--Digital-world-orange);
+    margin-bottom: 12px;
+  }
+  
+  .video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .popup-container {
+    position: fixed;
+    top: 0;
+    bottom: -500px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    height: 60px;
+    top: 500px;
+  }
+
+  .popup-container span {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Digital-world-orange);
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    top: -28px;
+    left: -12px;
+  }
+  
+  .popup-button {
+    background-color: var(--Digital-world-orange);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+
+  }
+  /* Optional responsive tweaks */
+  @media (min-width: 768px) {
+    .success-title  {
+      font-size: 36px !important;
+    }
+
+    .popup-container {
+      top: 400px;
+      right: 30px;
+    }
+
+    .video-container {
+      padding: 32px;
+    }
+  
+    .video-section-wrapper {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+  
+    .video-section {
+      flex: 1;
+      min-width: 400px;
+    }
+  }
+  
+
+  /* Mobile Screen Design */
+  @media (max-width: 668px) {
+
+    .input-group {
+      flex-direction: column;
+      width: 100%;
+    }
+    .phone-group {
+      flex-direction: column;
+      width: 100%;
+      
+    }
+
+    .phone-cointainer {
+      display: flex;
+      width: 100%;
+    }
+
+    .input-group .first-name, .last-name, .email, .phone-cointainer {
+      width: 100%;
+    }
+
+    .main-container {
+      width: 100%;
+      height: 100vh;
+      /* display: flex; */
+      /* align-items: flex-start; */
+    }
+
+    .forms-container {
+      width: 95%;
+      height: 90vh;
+      padding: 1rem;
+      /* margin: 10px; */
+
+    }
+
+
+    /* success Message */
+
+    .success-title {
+      font-size: 24px !important;
+    }
+    
+    .sub-heading {
+      font-size: 18px !important;
+      margin-bottom: 3px;
+    }
+
+    .success-message {
+      padding-bottom: 0;
+    }
+
+    .video-section h3 {
+      font-size: 24px;
+
+    }
+
+    .video-section p {
+      font-size: 14px;
+    }
+  }
+
+/* Center the forms-container on mobile */
+@media (max-width: 768px) {
+  .forms-container {
+    margin-top: 5px;
+    align-items: center;
+    height: 90vh;
+    width: 90%; /* Adjust width for smaller screens */
+    margin: auto; /* Center horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Allow scrolling if content overflows */
+  }
+}
+
