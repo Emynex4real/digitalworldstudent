@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CorporateForm.css';
+import './corporateform.css';
 
 const CorporateTrainingForm = ({onclose}) => {
   const [formData, setFormData] = useState({
