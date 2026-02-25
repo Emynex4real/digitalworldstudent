@@ -16,7 +16,7 @@ function HomePage() {
         >
             <HeroSection id="home-page" />
             
-            <div className="flex flex-col gap-y-20 md:gap-y-2 py-20 md:py-32">
+            <div className="flex flex-col gap-y-16 md:gap-y-20 py-16 md:py-24">
                 <ProfileSection />
                 <About />
                 <CourseSection />

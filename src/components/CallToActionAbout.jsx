@@ -17,7 +17,7 @@ function CTASectionAbout () {
     };
 
     return (
-        <section className="relative w-full py-20 lg:py-32 bg-[#212121] overflow-hidden">
+        <section className="relative w-full py-16 lg:py-24 bg-[#212121] overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 <motion.div 
@@ -25,7 +25,7 @@ function CTASectionAbout () {
                     whileInView={{ opacity: 1, scale: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ type: "spring", stiffness: 100, damping: 20 }}
-                    className="relative w-full bg-gradient-to-br from-[#F7941D] to-[#FFB75E] rounded-[3rem] p-10 md:p-16 lg:p-24 text-center overflow-hidden shadow-[0_20px_50px_rgba(247,148,29,0.3)]"
+                    className="relative w-full bg-gradient-to-br from-[#F7941D] to-[#FFB75E] rounded-[3rem] p-8 md:p-12 lg:p-16 text-center overflow-hidden shadow-[0_20px_50px_rgba(247,148,29,0.3)]"
                 >
                     {/* Ambient Glows */}
                     <div className="absolute top-[-50%] left-[-10%] w-[300px] h-[300px] bg-white opacity-10 rounded-full blur-[80px] pointer-events-none"></div>
@@ -47,7 +47,7 @@ function CTASectionAbout () {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight mb-6 drop-shadow-sm"
+                            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.15] tracking-tight mb-5 drop-shadow-sm"
                             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                         >
                             Learn It. <span className="text-[#212121]">Earn</span> It. Live It.
@@ -58,7 +58,7 @@ function CTASectionAbout () {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.4 }}
-                            className="text-[#212121]/80 text-lg md:text-xl font-medium mb-10 max-w-2xl mx-auto leading-relaxed"
+                            className="text-[#212121]/80 text-base md:text-lg font-medium mb-8 max-w-2xl mx-auto leading-relaxed"
                             style={{ fontFamily: "'Inter', sans-serif" }}
                         >
                             Digital World Tech Academy gives you the tools to master in-demand skills — from learning to business strategy — and start making money confidently.
@@ -68,7 +68,7 @@ function CTASectionAbout () {
                             <Link 
                                 to="/courses" 
                                 onClick={scrollToTop}
-                                className="inline-block px-10 py-4 md:px-12 md:py-5 bg-[#212121] text-white text-base md:text-lg font-bold rounded-full shadow-xl hover:bg-gray-900 transition-colors duration-300"
+                                className="inline-block px-8 py-3 md:px-10 md:py-4 bg-[#212121] text-white text-sm md:text-base font-bold rounded-full shadow-xl hover:bg-gray-900 transition-colors duration-300"
                                 style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                             >
                                 Explore Courses Now

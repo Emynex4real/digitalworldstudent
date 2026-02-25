@@ -16,11 +16,11 @@ function Navbar({ handleHideMenu, menuOpen }) {
       `}
     >
       {/* Navigation Links */}
-      <ul className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8 w-full lg:w-auto">
+      <ul className="flex flex-col lg:flex-row items-center gap-5 lg:gap-6 w-full lg:w-auto">
         <li onClick={handleHideMenu}>
           <Link 
             to="/" 
-            className={`text-[15px] font-bold tracking-wide transition-colors duration-200 ${
+            className={`text-[13px] font-bold tracking-wide transition-colors duration-200 ${
               currentPath === '/' ? 'text-white' : 'text-[#212121] hover:text-white'
             }`}
           >
@@ -30,7 +30,7 @@ function Navbar({ handleHideMenu, menuOpen }) {
         <li onClick={handleHideMenu}>
           <Link 
             to="/about" 
-            className={`text-[15px] font-bold tracking-wide transition-colors duration-200 ${
+            className={`text-[13px] font-bold tracking-wide transition-colors duration-200 ${
               currentPath === '/about' ? 'text-white' : 'text-[#212121] hover:text-white'
             }`}
           >
@@ -40,7 +40,7 @@ function Navbar({ handleHideMenu, menuOpen }) {
         <li onClick={handleHideMenu}>
           <Link 
             to="/courses" 
-            className={`text-[15px] font-bold tracking-wide transition-colors duration-200 ${
+            className={`text-[13px] font-bold tracking-wide transition-colors duration-200 ${
               currentPath === '/courses' ? 'text-white' : 'text-[#212121] hover:text-white'
             }`}
           >
@@ -50,7 +50,7 @@ function Navbar({ handleHideMenu, menuOpen }) {
         <li onClick={handleHideMenu}>
           <Link 
             to="/student-portfolio" 
-            className={`text-[15px] font-bold tracking-wide transition-colors duration-200 ${
+            className={`text-[13px] font-bold tracking-wide transition-colors duration-200 ${
               currentPath === '/student-portfolio' ? 'text-white' : 'text-[#212121] hover:text-white'
             }`}
           >
@@ -60,7 +60,7 @@ function Navbar({ handleHideMenu, menuOpen }) {
       </ul>
 
       {/* Call to Action Buttons */}
-      <div className="flex flex-col lg:flex-row items-center gap-4 mt-8 lg:mt-0 w-full lg:w-auto">
+      <div className="flex flex-col lg:flex-row items-center gap-3 mt-6 lg:mt-0 w-full lg:w-auto">
         <Link 
           to="https://students.digitalworldtech.academy/" 
           target="_blank" 
@@ -68,7 +68,7 @@ function Navbar({ handleHideMenu, menuOpen }) {
           className="w-full lg:w-auto"
         >
           <button 
-            className="w-full lg:w-auto px-7 py-3 border-2 border-white text-white text-sm font-bold rounded-full hover:bg-white hover:text-[#F7941D] transition-all duration-300"
+            className="w-full lg:w-auto px-6 py-2.5 border-2 border-white text-white text-xs font-bold rounded-full hover:bg-white hover:text-[#F7941D] transition-all duration-300"
           >
             Student Login
           </button>
@@ -77,7 +77,7 @@ function Navbar({ handleHideMenu, menuOpen }) {
         <Link 
           onClick={handleHideMenu} 
           to="/contact" 
-          className="w-full lg:w-auto text-center px-7 py-3.5 bg-white text-[#212121] text-sm font-bold rounded-full hover:bg-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+          className="w-full lg:w-auto text-center px-6 py-2.5 bg-white text-[#212121] text-xs font-bold rounded-full hover:bg-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
         >
           Make an Enquiry
         </Link>

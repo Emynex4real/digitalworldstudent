@@ -37,7 +37,7 @@ const faqItems = [
 
 function FAQ() {
   return (
-    <section className="relative w-full py-20 lg:py-32 bg-[#212121] overflow-hidden border-t border-white/5">
+    <section className="relative w-full py-16 lg:py-24 bg-[#212121] overflow-hidden border-t border-white/5">
       
       {/* Ambient Background Glow */}
       <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-[#F7941D] opacity-[0.03] blur-[150px] pointer-events-none"></div>
@@ -45,18 +45,18 @@ function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Section */}
-        <div className="text-center mb-16 relative">
+        <div className="text-center mb-12 relative">
           <motion.h2 
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white inline-flex items-center gap-4 relative"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white inline-flex items-center gap-4 relative"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
             Frequently Asked <br className="md:hidden" />
             <span className="text-[#F7941D] relative ml-2 md:ml-0">
               Questions
-              <img src={spark} alt="Spark" className="absolute -top-6 -right-10 w-8 h-8 md:w-12 md:h-12 animate-pulse" />
+              <img src={spark} alt="Spark" className="absolute -top-5 -right-8 w-6 h-6 md:w-10 md:h-10 animate-pulse" />
             </span>
           </motion.h2>
         </div>

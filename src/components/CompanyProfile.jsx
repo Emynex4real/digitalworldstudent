@@ -24,7 +24,7 @@ function ProfileSection() {
     };
 
     return (
-        <section className="bg-[#212121] py-12 w-full">
+        <section className="bg-[#212121] py-8 w-full">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
                 {/* The Main Wide Banner Container */}
@@ -49,20 +49,20 @@ function ProfileSection() {
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, margin: "-50px" }}
-                        className="relative z-10 py-16 px-6 sm:px-12 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-white items-center text-center"
+                        className="relative z-10 py-12 px-6 sm:px-12 grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 text-white items-center text-center"
                     >
                         {stats.map((stat) => (
                             <motion.div key={stat.id} variants={itemVariants} className="flex flex-col items-center">
                                 {/* The large numbers */}
                                 <h2 
-                                    className="text-[4rem] md:text-7xl lg:text-[5.5rem] font-bold mb-2 tracking-tighter leading-none drop-shadow-md" 
+                                    className="text-5xl md:text-6xl lg:text-7xl font-bold mb-2 tracking-tighter leading-none drop-shadow-md" 
                                     style={{ fontFamily: "'Inter', sans-serif" }}
                                 >
                                     {stat.value}
                                 </h2>
                                 {/* The labels */}
                                 <p 
-                                    className="text-base md:text-lg font-medium leading-tight max-w-[180px] drop-shadow-sm" 
+                                    className="text-sm md:text-base font-medium leading-tight max-w-[180px] drop-shadow-sm" 
                                     style={{ fontFamily: "'Inter', sans-serif" }}
                                 >
                                     {stat.label}

@@ -6,7 +6,7 @@ import CourseCards from './Course';
 
 function CourseSection() {
     return (
-        <section className="relative w-full py-20 lg:py-32 bg-[#212121] overflow-hidden border-t border-white/5">
+        <section className="relative w-full py-16 lg:py-24 bg-[#212121] overflow-hidden border-t border-white/5">
             
             {/* Ambient Background Glow */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#F7941D] opacity-[0.03] blur-[150px] pointer-events-none"></div>
@@ -14,18 +14,18 @@ function CourseSection() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 
                 {/* Section Header */}
-                <div className="text-center mb-16 lg:mb-20 relative">
+                <div className="text-center mb-12 lg:mb-16 relative">
                     <motion.h2 
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-5xl md:text-6xl font-bold text-white inline-flex items-center gap-4 relative"
+                        className="text-4xl md:text-5xl font-bold text-white inline-flex items-center gap-4 relative"
                         style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                     >
                         Our <span className="text-[#F7941D] relative">
                             Courses
                             {/* Spark Decoration */}
-                            <img src={spark} alt="Spark" className="absolute -top-6 -right-10 w-8 h-8 md:w-12 md:h-12 animate-pulse" />
+                            <img src={spark} alt="Spark" className="absolute -top-5 -right-8 w-6 h-6 md:w-10 md:h-10 animate-pulse" />
                         </span>
                     </motion.h2>
                     <motion.p 
@@ -33,7 +33,7 @@ function CourseSection() {
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-400 mt-4 text-lg max-w-2xl mx-auto"
+                        className="text-gray-400 mt-4 text-base max-w-2xl mx-auto"
                         style={{ fontFamily: "'Inter', sans-serif" }}
                     >
                         Discover our most sought-after programs, carefully curated to build your tech career from the ground up.

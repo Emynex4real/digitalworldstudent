@@ -5,7 +5,7 @@ export default function IntroductoryVideo() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="relative w-full py-20 lg:py-32 bg-[#212121] overflow-hidden border-t border-white/5">
+    <section className="relative w-full py-16 lg:py-24 bg-[#212121] overflow-hidden border-t border-white/5">
       
       {/* Ambient Background Glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[#F7941D] opacity-[0.03] blur-[150px] pointer-events-none"></div>
@@ -13,19 +13,19 @@ export default function IntroductoryVideo() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row items-center justify-between mb-12 lg:mb-16 gap-8 text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-10 lg:mb-12 gap-8 text-center md:text-left">
           
           <motion.h2 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl font-bold text-white flex items-center justify-center md:justify-start gap-4 relative"
+            className="text-4xl md:text-5xl font-bold text-white flex items-center justify-center md:justify-start gap-4 relative"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
           >
             Introductory <span className="text-[#F7941D] relative">
               Video
               {/* Spark Icon */}
-              <img src="./images/video left icon.png" alt="" className="absolute -top-4 -right-8 w-8 h-8 md:w-10 md:h-10 animate-pulse" />
+              <img src="./images/video left icon.png" alt="" className="absolute -top-3 -right-7 w-6 h-6 md:w-8 md:h-8 animate-pulse" />
             </span>
           </motion.h2>
 

@@ -26,7 +26,7 @@ export default function Header() {
     <header 
       ref={navRef}
       // Added relative positioning so the mobile dropdown anchors correctly to this box
-      className="relative bg-[#F7941D] mx-4 my-6 lg:mx-16 lg:my-8 px-6 py-4 rounded-[2rem] flex items-center justify-between sticky top-4 lg:top-6 z-[999] shadow-[0_8px_30px_rgb(247,148,29,0.2)]"
+      className="relative bg-[#F7941D] mx-4 my-6 mb-0 lg:mx-16 lg:my-8 px-6 py-4 rounded-[2rem] flex items-center justify-between sticky top-4 lg:top-6 z-[999] shadow-[0_8px_30px_rgb(247,148,29,0.2)]"
       style={{ fontFamily: "'Inter', sans-serif" }}
     >
       {/* Logo Container */}

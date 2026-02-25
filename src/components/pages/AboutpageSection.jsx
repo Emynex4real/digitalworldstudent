@@ -11,13 +11,13 @@ function AboutpageSection() {
     };
 
     return (
-        <section className="relative w-full py-20 lg:py-32 bg-[#212121] overflow-hidden" id="aboutPage">
+        <section className="relative w-full py-16 lg:py-24 bg-[#212121] overflow-hidden" id="aboutPage">
             
             {/* Background Ambient Glow */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-[#F7941D] opacity-[0.03] blur-[150px] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                     
                     {/* Left Column: Image with Premium Styling */}
                     <motion.div 
@@ -57,7 +57,7 @@ function AboutpageSection() {
                     >
                         <motion.h3 
                             variants={textVariants}
-                            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
+                            className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight"
                             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
                         >
                             Empowering the Next Generation of Tech Talent <br className="hidden md:block" />
@@ -66,14 +66,14 @@ function AboutpageSection() {
                             </span>
                         </motion.h3>
 
-                        <motion.p variants={textVariants} className="text-gray-300 text-lg leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                        <motion.p variants={textVariants} className="text-gray-300 text-base leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
                             Digital World Tech Academy is a fast-growing technology training institute committed to helping individuals
                             launch and grow successful careers in the digital space. Founded in the heart of Ikorodu, Lagos, we proudly
                             serve our community through a hybrid learning model, combining flexible online programs with offline,
                             in-person classes for hands-on impact.
                         </motion.p>
 
-                        <motion.p variants={textVariants} className="text-gray-300 text-lg leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
+                        <motion.p variants={textVariants} className="text-gray-300 text-base leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
                             With three physical branches strategically located across Ikorodu, we ensure that premium tech education is accessible, practical, and affordable for everyone—from students and jobseekers to business owners and aspiring developers.
                         </motion.p>
 
@@ -84,7 +84,7 @@ function AboutpageSection() {
                             <span className="px-4 py-1.5 rounded-full border border-[#F7941D]/40 bg-[#F7941D]/10 text-[#F7941D] font-semibold text-sm shadow-sm" style={{ fontFamily: "'Inter', sans-serif" }}>📍 Garage Branch</span>
                         </motion.div>
 
-                        <motion.p variants={textVariants} className="text-gray-400 text-base leading-relaxed border-l-4 border-[#F7941D] pl-6 mt-4 italic" style={{ fontFamily: "'Inter', sans-serif" }}>
+                        <motion.p variants={textVariants} className="text-gray-400 text-sm leading-relaxed border-l-4 border-[#F7941D] pl-6 mt-4 italic" style={{ fontFamily: "'Inter', sans-serif" }}>
                             "At Digital World Tech Academy, we believe that location or background should never limit opportunity. Whether
                             you're learning from home or walking into one of our centers, you're stepping into a future built
                             on knowledge, innovation, and digital excellence."
