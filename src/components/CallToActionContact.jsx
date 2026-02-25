@@ -1,26 +1,89 @@
-import { Link } from 'react-router-dom'
-import aboutSpring from '../assets/images/About-Spring.png'
-function CTASectionContact () {
-    const scrollToTop = () => {
-        scrollTo({top: 0, behavior: "smooth"})
-    }
-    return (
-        <div className="launch contactCTA">
-            <div className="launch-content">
-                <div className="launch-angle">
-                    <img src="/images/Group 1321314833.png" alt="" />
-                </div>
-                
-                <div className="launch-spring">
-                    <img src={aboutSpring} alt="" />
-                </div>
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import aboutSpring from '../assets/images/About-Spring.png';
 
-                <h1>Learn <span className="changeBlack">Profitable Skills</span> Build a Better Future.</h1>
-                <p>From Data Analysis to digital marketing, gain hands-on knowledge that turns your passion into income — online or offline.</p>
-                <Link to={"/courses"} ><button onClick={()=>{scrollToTop()}}>Explore Courses Now</button></Link>
+function CTASectionContact() {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    // Continuous floating animations for the background doodles
+    const floatingVariants = {
+        animate: { y: [0, -15, 0], transition: { duration: 4, repeat: Infinity, ease: "easeInOut" } }
+    };
+
+    const floatingVariantsReverse = {
+        animate: { y: [0, 15, 0], transition: { duration: 5, repeat: Infinity, ease: "easeInOut" } }
+    };
+
+    return (
+        <section className="relative w-full py-20 lg:py-32 bg-[#212121] overflow-hidden border-t border-white/5">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                
+                <motion.div 
+                    initial={{ opacity: 0, scale: 0.95, y: 40 }}
+                    whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ type: "spring", stiffness: 100, damping: 20 }}
+                    className="relative w-full bg-gradient-to-br from-[#F7941D] to-[#FFB75E] rounded-[3rem] p-10 md:p-16 lg:p-24 text-center overflow-hidden shadow-[0_20px_50px_rgba(247,148,29,0.3)]"
+                >
+                    {/* Ambient Internal Glows for Depth */}
+                    <div className="absolute top-[-50%] left-[-10%] w-[300px] h-[300px] bg-white opacity-10 rounded-full blur-[80px] pointer-events-none"></div>
+                    <div className="absolute bottom-[-50%] right-[-10%] w-[400px] h-[400px] bg-white opacity-10 rounded-full blur-[100px] pointer-events-none"></div>
+
+                    {/* Floating Decorative Doodles */}
+                    <motion.div variants={floatingVariants} animate="animate" className="absolute top-8 left-8 md:top-12 md:left-16 w-16 md:w-24 opacity-80 pointer-events-none hidden sm:block">
+                        <img src="/images/Group 1321314833.png" alt="" className="w-full h-auto object-contain" />
+                    </motion.div>
+
+                    <motion.div variants={floatingVariantsReverse} animate="animate" className="absolute bottom-8 right-8 md:bottom-12 md:right-16 w-16 md:w-24 opacity-80 pointer-events-none hidden sm:block">
+                        <img src={aboutSpring} alt="" className="w-full h-auto object-contain" />
+                    </motion.div>
+
+                    {/* Main Content Wrapper */}
+                    <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+                        
+                        <motion.h2 
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] tracking-tight mb-6 drop-shadow-sm"
+                            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                        >
+                            Learn <span className="text-[#212121]">Profitable Skills.</span> <br className="hidden md:block" />
+                            Build a Better Future.
+                        </motion.h2>
+
+                        <motion.p 
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.4 }}
+                            className="text-[#212121]/80 text-lg md:text-xl font-medium mb-10 max-w-2xl mx-auto leading-relaxed"
+                            style={{ fontFamily: "'Inter', sans-serif" }}
+                        >
+                            From Data Analysis to digital marketing, gain hands-on knowledge that turns your passion into income — online or offline.
+                        </motion.p>
+
+                        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                            <Link 
+                                to="/courses" 
+                                onClick={scrollToTop}
+                                className="inline-block px-10 py-4 md:px-12 md:py-5 bg-[#212121] text-white text-base md:text-lg font-bold rounded-full shadow-xl hover:bg-gray-900 transition-colors duration-300"
+                                style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}
+                            >
+                                Explore Courses Now
+                            </Link>
+                        </motion.div>
+
+                    </div>
+                </motion.div>
+                
             </div>
-        </div>
-    )
-};
+        </section>
+    );
+}
 
 export default CTASectionContact;
